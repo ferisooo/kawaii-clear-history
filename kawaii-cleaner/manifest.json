@@ -3,7 +3,7 @@
   "name": "Kawaii Cleaner",
   "version": "1.1.0",
   "description": "Clear your search history & local Google data in one click 🌸",
-  "permissions": ["browsingData", "history", "tabs"],
+  "permissions": ["browsingData"],
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
