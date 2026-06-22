@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Kawaii Cleaner",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Clear your search history & local Google data in one click 🌸",
   "permissions": ["browsingData", "history", "tabs"],
   "action": {
