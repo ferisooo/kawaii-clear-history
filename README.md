@@ -1,4 +1,8 @@
-# 🌸 Kawaii Cleaner
+<p align="center">
+  <img src="kawaii-cleaner/icons/icon128.png" alt="Kawaii Cleaner icon" width="128" height="128" />
+</p>
+
+<h1 align="center">🌸 Kawaii Cleaner</h1>
 
 A cute, one-click Chrome extension that wipes your local browsing data and gives
 you fast shortcuts to clear the history saved in your Google account.
