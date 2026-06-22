@@ -71,7 +71,3 @@ Since the App collects nothing, any update will simply clarify that fact.
 
 Questions about privacy can be directed to the project maintainer through the
 project's repository.
-
----
-
-*This document is provided for general transparency and is not legal advice.*
