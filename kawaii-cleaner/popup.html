@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="wrap">
+    <h1>🌸 Kawaii Cleaner</h1>
+    <p class="sub">wipe your local history &amp; data</p>
+
+    <label class="field">
+      <span>time range</span>
+      <select id="range">
+        <option value="3600000">last hour</option>
+        <option value="86400000">last 24 hours</option>
+        <option value="604800000">last 7 days</option>
+        <option value="2419200000">last 4 weeks</option>
+        <option value="all" selected>all time</option>
+      </select>
+    </label>
+
+    <div class="checks">
+      <label><input type="checkbox" id="history" checked /> search &amp; browsing history</label>
+      <label><input type="checkbox" id="cache" checked /> cache</label>
+      <label><input type="checkbox" id="cookies" /> cookies (sign-in data)</label>
+      <label class="indent"><input type="checkbox" id="googleOnly" checked /> ↳ only Google sites</label>
+      <label><input type="checkbox" id="downloads" /> download history</label>
+      <label><input type="checkbox" id="formData" /> autofill / form data</label>
+    </div>
+
+    <button id="clear" class="btn primary">✨ Clear now</button>
+    <button id="activity" class="btn ghost">open My Google Activity ↗</button>
+
+    <p id="status" class="status"></p>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
