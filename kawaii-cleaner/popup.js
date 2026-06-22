@@ -60,9 +60,30 @@ $("clear").addEventListener("click", async () => {
   }
 });
 
-$("activity").addEventListener("click", () => {
-  chrome.tabs.create({ url: "https://myactivity.google.com/myactivity" });
-});
+// --- Google account history: deep-links into Google's own tools ---
+// Google has no API to delete account activity, so the best we can do is
+// jump straight to the right page where you confirm it yourself.
+const openTab = (url) => chrome.tabs.create({ url });
+
+// Straight to the "Delete activity" dialog (default to "All time").
+$("deleteActivity").addEventListener("click", () =>
+  openTab("https://myactivity.google.com/delete-activity")
+);
+
+// Activity controls — where you set the 3/18/36-month auto-purge.
+$("autoDelete").addEventListener("click", () =>
+  openTab("https://myactivity.google.com/activitycontrols")
+);
+
+// YouTube watch & search history.
+$("ytHistory").addEventListener("click", () =>
+  openTab("https://myactivity.google.com/product/youtube")
+);
+
+// Full My Activity feed.
+$("activity").addEventListener("click", () =>
+  openTab("https://myactivity.google.com/myactivity")
+);
 
 // disable the "google only" toggle when cookies is off
 $("cookies").addEventListener("change", (e) => {

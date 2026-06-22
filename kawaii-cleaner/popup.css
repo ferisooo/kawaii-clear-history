@@ -51,3 +51,7 @@ select {
 .ghost:hover { background: #fff6fa; }
 
 .status { font-size: 12px; text-align: center; min-height: 16px; margin-top: 4px; color: #d24f8a; }
+
+.account { margin-top: 14px; padding-top: 12px; border-top: 1.5px dashed #ffc4dd; }
+.acct-title { font-size: 12.5px; font-weight: 600; text-align: center; margin-bottom: 4px; }
+.acct-note { font-size: 10.5px; line-height: 1.4; text-align: center; color: #b06a8a; margin-bottom: 10px; }
